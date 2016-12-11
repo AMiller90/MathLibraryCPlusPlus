@@ -9,21 +9,64 @@ class Color
 {
 
 public:
-	//Constructor
+	/// <summary>
+	/// The Constructor - T will define the type
+	/// </summary>
 	Color<T>();
-	//Overloaded Constructor
+
+	///<summary>
+	///Overloaded Constructor
+	///<para></para>
+	///<remarks><paramref name=" R"></paramref> -The r value</remarks>
+	///<para></para>
+	///<remarks><paramref name=" G"></paramref> -The g value</remarks>
+	///<para></para>
+	///<remarks><paramref name=" B"></paramref> -The b value</remarks>
+	///<para></para>
+	///<remarks><paramref name=" A"></paramref> -The a value</remarks>
+	///</summary>
 	Color<T>(T R, T G, T B, T A);
-	//Destructor
+	
+	/// <summary>
+	/// The Destructor - T will define the type
+	/// </summary>
 	~Color<T>();
-	//Magnitude of Vectors
+
+	///<summary>
+	///Magnitude of the vector
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The vector to get the magnitude of</remarks>
+	///</summary>
 	T Mag(Color<T> &a);
-	//Normalise Vectors
+
+	///<summary>
+	///Normalize a vector
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The vector to normalise</remarks>
+	///</summary>
 	Color<T> Normalise(Color<T> &a);
-	//Dot Product Vector
+
+	///<summary>
+	///Dot product of 2 vectors
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The first vector</remarks>
+	///<para></para>
+	///<remarks><paramref name=" &b"></paramref> -The second vector</remarks>
+	///</summary>
 	T Dot(Color<T> &a, Color<T> &b);
-	//SquareRoot Function
+
+	///<summary>
+	///Squareroot of a number
+	///<para></para>
+	///<remarks><paramref name=" &num"></paramref> -The number to get the square root of</remarks>
+	///</summary>
 	T SquareRoot(T &num);
-	//Color Vector
+
+	///<summary>
+	///Convert to hexadecimal
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The array to convert to hexadecimal</remarks>
+	///</summary>
 	Color<T> HexConv(char[8]);
 
 	//Variables for coordinates

@@ -9,21 +9,64 @@ class Vector3
 {
 
 public: 
-	//Constructor
+	/// <summary>
+	/// The Constructor - T will define the type
+	/// </summary>
 	Vector3<T>();
-	//Overloaded Constructor
+
+	///<summary>
+	///Overloaded Constructor
+	///<para></para>
+	///<remarks><paramref name=" x"></paramref> -The x value</remarks>
+	///<para></para>
+	///<remarks><paramref name=" y"></paramref> -The y value</remarks>
+	///<para></para>
+	///<remarks><paramref name=" z"></paramref> -The z value</remarks>
+	///</summary>
 	Vector3<T>(T x, T y, T z);
-	//Destructor
+
+	/// <summary>
+	/// The Destructor - T will define the type
+	/// </summary>
 	~Vector3<T>();
-	//Magnitude of Vectors
+
+	///<summary>
+	///Magnitude of the vector
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The vector to get the magnitude of</remarks>
+	///</summary>
 	T Mag(Vector3<T> &a);
-	//Normalise Vectors
+
+	///<summary>
+	///Normalize a vector
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The vector to normalise</remarks>
+	///</summary>
 	Vector3<T> Normalise(Vector3<T> &a);
-	//Dot Product Vector
+
+	///<summary>
+	///Dot product of 2 vectors
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The first vector</remarks>
+	///<para></para>
+	///<remarks><paramref name=" &b"></paramref> -The second vector</remarks>
+	///</summary>
 	T Dot(Vector3<T> &a, Vector3<T> &b);
-	//Cross Product Vector
+
+	///<summary>
+	///Cross product of 2 vectors
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The first vector to use</remarks>
+	///<para></para>
+	///<remarks><paramref name=" &b"></paramref> -The second vector to use</remarks>
+	///</summary>
 	Vector3<T> Cross(Vector3<T> &a, Vector3<T> &b);
-	//SquareRoot Function
+
+	///<summary>
+	///Squareroot of a number
+	///<para></para>
+	///<remarks><paramref name=" &num"></paramref> -The number to get the square root of</remarks>
+	///</summary>
 	T SquareRoot(T &num);
 	
 	//Variables for coordinates

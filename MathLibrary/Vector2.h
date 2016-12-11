@@ -10,19 +10,53 @@ class Vector2
 {
 
 public:
-	//Constructor
+	/// <summary>
+	/// The Constructor - T will define the type
+	/// </summary>
 	Vector2<T>();
-	//Overloaded Constructor
+
+	///<summary>
+	///Overloaded Constructor
+	///<para></para>
+	///<remarks><paramref name=" x"></paramref> -The x value</remarks>
+	///<para></para>
+	///<remarks><paramref name=" y"></paramref> -The y value</remarks>
+	///</summary>
 	Vector2<T>(T x, T y);
-	//Destructor
+
+	/// <summary>
+	/// The Destructor - T will define the type
+	/// </summary>
 	~Vector2<T>();
-	//Magnitude of Vectors
+
+	///<summary>
+	///Magnitude of the vector
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The vector to get the magnitude of</remarks>
+	///</summary>
 	T Mag(Vector2<T> &a);
-	//Normalise Vectors
+
+	///<summary>
+	///Normalize a vector
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The vector to normalise</remarks>
+	///</summary>
 	Vector2<T>Normalise(Vector2<T> &a);
-	//Dot Product Vector
+
+	///<summary>
+	///Dot product of 2 vectors
+	///<para></para>
+	///<remarks><paramref name=" &a"></paramref> -The first vector</remarks>
+	///<para></para>
+	///<remarks><paramref name=" &b"></paramref> -The second vector</remarks>
+	///</summary>
 	T Dot(Vector2<T> &a, Vector2<T> &b);
-	//SquareRoot Function
+
+	///<summary>
+	///Squareroot of a number
+	///<para></para>
+	///<remarks><paramref name=" &num"></paramref> -The number to get the square root of</remarks>
+	///</summary>
 	T SquareRoot(T &num);
 
 	//Variables for coordinates
